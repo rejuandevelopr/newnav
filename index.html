@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
+</head>
+<body>
+    <!-- Mobile Navigation  -->
+    <nav class="mobilenav">
+        <div class="d-flex justify-content-start">
+            <span class="hamburg" onclick="openNav()">&#9776;</span>
+        </div>
+    </nav>
+    <!-- Mobile Navigation SideBar for Admin Panel  -->
+    <div id="mySidenav" class="sidenav">
+        <!-- Your navigation content goes here -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div>
+            <div class="navbar-logo">
+                <a href=""><img src="./image/brandlogo.png" width="165" height="70" alt="Brand Logo"></a>
+            </div>
+        </div>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="./image/nav-button-grid.svg" width="20" height="21" alt="Dashboard Icon"><span>Dashboard</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <img src="./image/file-search.svg" width="20" height="21" alt="Market Place Icon"><span>Research</span>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <a class="nav-link" href="#"><img src="./image/grid-small-button.svg" width="12" height="13" alt="Icon"><span>Find Items</span></a>
+
+                            <a class="nav-link" href="#"><img src="./image/grid-small-button.svg" width="12" height="13" alt="Icon"><span>Most Watched</span></a>
+
+                            <a class="nav-link" href="#"><img src="./image/grid-small-button.svg" width="12" height="13" alt="Icon"><span>Most Sold</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </li>
+
+            <li class="nav-item">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <img src="./image/market-place-button.svg" width="20" height="21" alt="Market Place Icon"><span>Marketplace</span>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <a class="nav-link" href="#"><img src="./image/grid-small-button.svg" width="12" height="13" alt="Icon"><span>Find Items</span></a>
+
+                            <a class="nav-link" href="#"><img src="./image/grid-small-button.svg" width="12" height="13" alt="Icon"><span>Most Watched</span></a>
+
+                            <a class="nav-link" href="#"><img src="./image/grid-small-button.svg" width="12" height="13" alt="Icon"><span>Most Sold</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link bottom-links" href="#">
+                    <img src="./image/listings-button.svg" width="20" height="21" alt="Listings Button"><span>Listings</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link bottom-links" href="#">
+                    <img src="./image/cart.svg" width="20" height="21" alt="Listings Button"><span>Order</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link bottom-links" href="#">
+                    <img src="./image/user-settings.svg" width="20" height="21" alt="Listings Button"><span>Admin Panel</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link bottom-links" href="#">
+                    <img src="./image/open-book.svg" width="20" height="21" alt="Listings Button"><span>Support</span>
+                </a>
+            </li>
+        </ul>
+        <div>
+            <hr class="profile-hr">
+            <div class="profile-main">
+                    <div class="accordion accordion-flush accordion-button-profile" id="accordionFlushExample">
+                        <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <div class="profile-login">
+                                    <img src="./image/profile-login-avatar.svg" width="40" height="41" alt="Market Place Icon">
+                                    <div class="profile-login-content">
+                                        <span>Logged in as</span>
+                                        <span>Bert Karkanis</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <button class="btn"><img src="./image/setting.svg" width="20" height="21" alt="Icon"><span>Settings</span></button>
+                                <button class="btn"><img src="./image/logout.svg" width="20" height="21" alt="Icon"><span>Log Out</span></button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- Desktop View Sidebar  -->
+    <nav class="navstyle">
+        <div>
+            <div class="navbar-logo">
+                <a href=""><img src="./image/brandlogo.png" width="165" height="70" alt="Brand Logo"></a>
+            </div>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="./image/nav-button-grid.svg" width="20" height="21" alt="Dashboard Icon"><span>Dashboard</span>
+                    </a>
+                </li>
+    
+                <li class="nav-item">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <img src="./image/file-search.svg" width="20" height="21" alt="Market Place Icon"><span>Research</span>
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <a class="nav-link" href="#"><img src="./image/grid-small-button.svg" width="12" height="13" alt="Icon"><span>Find Items</span></a>
+    
+                                <a class="nav-link" href="#"><img src="./image/grid-small-button.svg" width="12" height="13" alt="Icon"><span>Most Watched</span></a>
+    
+                                <a class="nav-link" href="#"><img src="./image/grid-small-button.svg" width="12" height="13" alt="Icon"><span>Most Sold</span></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </li>
+    
+                <li class="nav-item">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <img src="./image/market-place-button.svg" width="20" height="21" alt="Market Place Icon"><span>Marketplace</span>
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <a class="nav-link" href="#"><img src="./image/grid-small-button.svg" width="12" height="13" alt="Icon"><span>Find Items</span></a>
+    
+                                <a class="nav-link" href="#"><img src="./image/grid-small-button.svg" width="12" height="13" alt="Icon"><span>Most Watched</span></a>
+    
+                                <a class="nav-link" href="#"><img src="./image/grid-small-button.svg" width="12" height="13" alt="Icon"><span>Most Sold</span></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link bottom-links" href="#">
+                        <img src="./image/listings-button.svg" width="20" height="21" alt="Listings Button"><span>Listings</span>
+                    </a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link bottom-links" href="#">
+                        <img src="./image/cart.svg" width="20" height="21" alt="Listings Button"><span>Order</span>
+                    </a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link bottom-links" href="#">
+                        <img src="./image/user-settings.svg" width="20" height="21" alt="Listings Button"><span>Admin Panel</span>
+                    </a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link bottom-links" href="#">
+                        <img src="./image/open-book.svg" width="20" height="21" alt="Listings Button"><span>Support</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <hr class="profile-hr">
+            <div class="profile-main">
+                <div class="accordion accordion-flush accordion-button-profile" id="accordionFlushExample">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <div class="profile-login">
+                                <img src="./image/profile-login-avatar.svg" width="40" height="41" alt="Market Place Icon">
+                                <div class="profile-login-content">
+                                    <span>Logged in as</span>
+                                    <span>Bert Karkanis</span>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <button class="btn"><img src="./image/setting.svg" width="20" height="21" alt="Icon"><span>Settings</span></button>
+                            <button class="btn"><img src="./image/logout.svg" width="20" height="21" alt="Icon"><span>Log Out</span></button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repudiandae ea ipsam molestias nulla unde ad, autem, omnis tenetur hic, sit cum? Corrupti, vero! Inventore voluptas vitae eveniet obcaecati laudantium. Iure culpa reprehenderit nobis nihil ad ea, quisquam iusto nesciunt sunt qui tempora ipsum facere quas dolorem error dolore. Reiciendis reprehenderit natus impedit distinctio ex animi, voluptates illum ab aspernatur deserunt fugit rerum fuga error obcaecati dicta, quos alias quam similique sed nesciunt adipisci dolorem, libero quis expedita. Dignissimos optio, rem accusamus aut unde doloribus alias dolorum commodi rerum, eius libero obcaecati sit iste sapiente ab eos eum exercitationem, amet illum aspernatur dolores cum? Recusandae, modi totam officiis velit aperiam ducimus, numquam aliquid, accusantium animi nesciunt molestiae officia quo tenetur quam reiciendis? Hic vitae natus consequatur nulla facere dolorem nihil saepe suscipit explicabo sed tempore quaerat, recusandae sunt placeat ducimus! Placeat saepe eligendi ducimus repellat, quos consectetur tempora perferendis porro asperiores explicabo maxime nobis doloribus delectus alias quae sunt nam beatae illo accusamus ab voluptatem quis exercitationem facilis. Modi magnam impedit temporibus molestias quia autem sed esse nobis voluptatem reiciendis repellat neque, totam tempore perspiciatis facere labore? Ea ratione nihil perspiciatis mollitia obcaecati sunt debitis dignissimos soluta tempore, magni, vel, doloremque dolore? Corrupti facere nihil similique, sit sapiente, sint autem eum fugit quas doloremque vero amet non ratione maiores in alias earum quia fuga aliquam dolorem ipsam? Amet similique reiciendis pariatur veniam, eligendi enim corrupti dolorum non ea ab accusamus excepturi maiores numquam incidunt ratione! Facere id blanditiis nisi assumenda! Fuga, similique minus tempore, ea quis placeat doloribus velit ut saepe cupiditate blanditiis soluta libero ipsa harum. Impedit molestiae, ipsa aliquid ducimus perferendis quae sequi magni earum dolorum laborum voluptatem nesciunt cumque. Architecto vitae laudantium alias ipsam ipsa nemo voluptatum error. Aliquam reprehenderit quod architecto nemo deleniti non illo nulla soluta modi, repellendus at commodi quo, ipsa totam rem reiciendis omnis autem? Explicabo quia exercitationem perferendis dolorem dolore autem quod pariatur illum. Maiores possimus, eos quasi itaque quidem id vitae est qui hic praesentium beatae accusantium autem adipisci culpa eaque voluptates ex amet saepe, excepturi tempore ipsam. Aliquid qui aut fugiat saepe ab officiis quibusdam. Perspiciatis laudantium ea deleniti hic? Omnis temporibus ducimus non molestias impedit cupiditate nulla voluptatem quae quidem facere, reprehenderit distinctio atque pariatur veritatis cumque ea inventore dolorum! Aut nesciunt doloribus aliquam voluptate. Magni sed commodi dignissimos blanditiis consequatur iusto, sequi vel incidunt hic cupiditate voluptatum totam molestias ad expedita nulla molestiae veritatis necessitatibus mollitia earum aut? Perferendis voluptatum eos odit voluptatibus dolorem delectus eum atque dignissimos, debitis ipsum possimus nisi tempora velit consequatur fugiat. Voluptate animi ut harum porro deserunt eveniet sit minus quidem, aperiam dicta libero ab fuga ullam corporis consequuntur error, ad neque sunt consequatur aliquid eum reprehenderit. Hic error magni, possimus sint voluptate nobis mollitia maxime modi minima ut placeat sed. Totam hic eaque perferendis obcaecati illo voluptatem suscipit fuga eveniet, tempore vero, id autem cupiditate aspernatur. Accusantium qui nisi ratione repudiandae eveniet alias ipsam, porro dolore similique quidem placeat dolorem quos eaque! Accusamus deserunt aliquid impedit explicabo autem sit, ullam expedita officia laboriosam fugit. Sint deserunt recusandae soluta corrupti accusamus placeat totam non et iusto, expedita provident atque quod eaque quis magnam consequuntur ab vel. Labore molestiae beatae ex perspiciatis dignissimos ad est nam ducimus veniam sunt in laborum quia, nemo ipsam laboriosam repellendus fuga saepe quisquam. Distinctio nesciunt illo libero corporis ipsum iure id ipsa? Laboriosam, sapiente! Provident exercitationem commodi, accusamus consectetur porro impedit est reiciendis atque at dignissimos laborum ullam repellendus quaerat velit voluptate neque cupiditate distinctio doloribus voluptatum nihil. Reprehenderit illo, delectus corporis nemo nihil quasi porro. Recusandae deleniti qui fugit eos quis neque eum voluptatibus aliquid dolor est optio iusto quos architecto quo ratione aliquam libero provident, cumque earum beatae necessitatibus impedit non. At eius odio totam quos vero accusamus quia sed ea quae quas quaerat sit, magni voluptas perferendis? Ipsum non est accusantium, explicabo iusto eius dolorem doloribus eaque velit magnam. Ipsa debitis provident nemo amet, maxime ad nostrum odio reprehenderit doloribus. Eos, veniam quisquam error, sapiente id quis illum aliquid fuga rem laboriosam repudiandae ex illo veritatis voluptates possimus repellendus, quod dolorum esse? Necessitatibus eos mollitia assumenda et culpa nostrum cupiditate libero doloribus accusamus, quibusdam repellendus non quasi consequuntur aspernatur explicabo quod amet perferendis velit pariatur blanditiis! Ut voluptas debitis illum fugiat fuga a hic veritatis quod voluptate illo, nulla iure tempore repellendus eaque dicta corrupti dignissimos eius? Sunt dolores voluptatem minus in soluta itaque iusto explicabo quasi? Autem maiores vero fugiat illo eum sit tenetur maxime quasi ullam, ad fugit enim consectetur omnis quo doloremque quod repudiandae dolores assumenda dicta a accusamus quidem animi odit fuga! Quibusdam perferendis odit provident. Laudantium id nulla officiis natus. Iste fuga debitis corrupti sit architecto minima quibusdam dolore optio nulla dolorem, consequuntur placeat nobis, illum impedit sint perspiciatis harum sapiente reiciendis omnis provident officia molestias ad! Quos quod praesentium ad dignissimos, nisi, iusto veritatis amet blanditiis deserunt rem magni cupiditate eaque asperiores nemo id itaque esse officiis perferendis quasi, quae at molestiae iure quidem dolores? Quam odit cupiditate itaque impedit inventore asperiores suscipit nesciunt dolorem eligendi distinctio, expedita deserunt? Minima ratione consequatur porro cupiditate assumenda ab odio illum nulla eos voluptates aliquid optio animi nostrum, modi temporibus? Sapiente nisi tenetur quae repudiandae molestias aliquid sequi, mollitia explicabo eaque facilis ad non enim quasi deserunt, natus veritatis ut saepe sit possimus illum sed, sunt facere! Magnam quidem nisi quia? Dolore vitae soluta reiciendis. Et delectus aut pariatur, in repudiandae illo perferendis reiciendis qui cumque eveniet autem aspernatur aliquid sequi neque quae inventore. Quod in accusamus fuga iure voluptatum temporibus magnam, esse ipsa corrupti assumenda aspernatur ab! Exercitationem eum iusto necessitatibus id numquam ducimus, illo, quod dolorum eligendi totam alias sed. Quam, ex nobis, dolorum exercitationem distinctio aut quos dolores eius officia nesciunt natus sequi? Modi quod aut sapiente maiores illum quibusdam cupiditate voluptatem ea fugit. Suscipit ipsa ea et beatae voluptas, blanditiis aperiam porro explicabo consequuntur architecto vel officiis incidunt sequi nemo amet. Aspernatur non dolor quam quaerat, ullam placeat?
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+       function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>

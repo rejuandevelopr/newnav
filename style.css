@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.navstyle {
+    background-color: #111928 !important;
+    padding-top: 15px !important;
+    width: 260px;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navstyle::-webkit-scrollbar {
+    width: 6px;
+}
+ /* Track */
+ .navstyle::-webkit-scrollbar-track {
+    background: rgba(37, 186, 233, 0.22);
+}
+
+/* Handle */
+.navstyle::-webkit-scrollbar-thumb {
+    background-color: #25BAE9;
+    border-radius: 6px;
+}
+
+
+
+.navstyle .navbar-logo {
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #1E354C;
+    padding-bottom: 24px;
+}
+.navstyle .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 24px 16px;
+}
+.navstyle .nav .nav-item{
+    width: 228px;
+}
+.navstyle .nav .nav-item .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 14px;  
+    border-radius: 10px;
+    background-color: #111928;
+    border: 1px solid #111928;
+    transition: .3s ease;
+}
+.navstyle .nav .nav-item:first-child .nav-link:hover {
+    background-color: #25BAE9;
+    color: #fff;
+    border-color: #25BAE9;
+}
+.navstyle .nav .nav-item:first-child .nav-link span {
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 12px;
+    width: 160px;
+}
+.navstyle .nav-link:focus, .nav-link:hover {
+    color: #fff;
+}
+
+
+
+/* Accordion */
+.navstyle .accordion{
+    border: 1px solid #111928;
+    --bs-accordion-border-color: #111928;
+}
+.navstyle .accordion-item {
+    background-color: #111928;
+    color: #fff;
+    margin-top: 16px;
+}
+
+.navstyle .accordion-button {
+    background-color: #111928;
+    border: 1px solid #111928;
+    border-radius: 10px !important;
+    transition: .3s ease;
+    padding: 12px;
+}
+.navstyle .accordion-button:hover{
+    background-color: rgba(37, 186, 233, 0.22);
+    color: #fff;
+}
+.navstyle .accordion-button span {
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 12px;
+}
+.navstyle .accordion-button::after {
+    background-image: url('./image/chevron-down.svg') !important;
+}
+.navstyle .accordion-button:focus {
+    box-shadow: none;
+    border-color: #111928;
+}
+.navstyle .accordion-button:not(.collapsed){
+    background-color: rgba(37, 186, 233, 0.22);
+    color: #fff;
+    box-shadow: none;
+}
+.navstyle .accordion-body .nav-link{
+    display: flex;
+    align-items: center;
+}
+.navstyle .accordion-body .nav-link span {
+    color: #fff;
+    width: 140px;
+    margin-left: 12px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 150%; 
+    letter-spacing: 0.2px;
+}
+.navstyle .accordion-body .nav-link{
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #111928;
+    border: 1px solid #111928;
+    transition: .3s ease;
+    margin-bottom: 8px;
+}
+.navstyle .accordion-body .nav-link:hover{
+    background-color: #25BAE9;
+    color: #fff;
+    border-color: #25BAE9;
+}
+.navstyle .bottom-links {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 10px;
+    background-color: #111928;
+    border: 1px solid #111928;
+    padding: 16px;
+    margin-top: 16px;
+}
+.navstyle .bottom-links:hover {
+    background-color: #25BAE9 !important;
+    color: #fff !important;
+    border-color: #25BAE9 !important;
+}
+.navstyle .bottom-links span {
+    margin-left: 12px;
+    width: 160px;
+}
+
+
+/* Profile Login */
+.navstyle .profile-main {
+    margin-bottom: 16px;
+}
+
+
+.navstyle .profile-login {
+    display: flex;
+    align-items: center;
+}
+.navstyle .profile-login-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.navstyle .profile-login-content span:first-child {
+    color: #fff;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: inline-block;
+}
+.navstyle .profile-login-content span:last-child{
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: inline-block;
+    margin-top: 4px;
+}
+
+.navstyle .profile-main{
+    width: 100%;
+}
+.navstyle .profile-main .accordion-button {
+    border-radius: 0 !important;
+    background-color: #111928;
+    border: 1px solid #111928;
+}
+.navstyle .profile-main .accordion-button:hover {
+    background-color: #1F2A37;
+    border: 1px solid #1F2A37;
+}
+.navstyle .profile-main .accordion-button:not(.collapsed){
+    background-color: #1F2A37;
+    border: 1px solid #1F2A37;
+}
+
+.navstyle .profile-main .accordion-body .btn {
+    display: flex;
+    align-items: center;
+}
+.navstyle .profile-main .accordion-body .btn span {
+    margin-left: 12px;
+}
+.navstyle .profile-main .accordion-body{
+    background-color: #1F2A37;
+}
+.navstyle .profile-main .accordion-body .btn {
+    background-color: #1F2A37;
+    border-color: #1F2A37;
+    width: 120px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-bottom: 28px;
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.navstyle .profile-main .accordion-body .btn:last-child {
+    margin-bottom: 12px;
+    font-weight: 500;
+
+}
+.profile-hr{
+    border: 1px solid #1E354C;
+    margin: 0;
+    max-width: 228px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* MOBILE VIEW DESIGN  */
+.hamburg {
+    font-size: 20px;
+    position: fixed;
+    cursor: pointer;
+    left: 10px;
+    color: #25BAE9;
+    top: 10px;
+    padding: 0px 5px 0px 5px;
+    border: 1px solid #1E354C;
+    background-color: #1E354C;
+    border-radius: 5px;
+}
+
+.sidenav::-webkit-scrollbar {
+    width: 6px;
+}
+.sidenav::-webkit-scrollbar-track {
+    background: rgba(37, 186, 233, 0.22);
+}
+.sidenav::-webkit-scrollbar-thumb {
+    background-color: #25BAE9;
+    border-radius: 6px;
+}
+.sidenav .navbar-logo {
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #1E354C;
+    padding-bottom: 24px;
+}
+.sidenav .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 24px 16px;
+}
+.sidenav .nav .nav-item{
+    width: 228px;
+}
+.sidenav .nav .nav-item .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 14px;  
+    border-radius: 10px;
+    background-color: #111928;
+    border: 1px solid #111928;
+    transition: .3s ease;
+}
+.sidenav .nav .nav-item:first-child .nav-link:hover {
+    background-color: #25BAE9;
+    color: #fff;
+    border-color: #25BAE9;
+}
+.sidenav .nav .nav-item:first-child .nav-link span {
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 12px;
+    width: 160px;
+}
+.sidenav .nav-link:focus, .nav-link:hover {
+    color: #fff;
+}
+
+/* Accordion */
+.sidenav .accordion{
+    border: 1px solid #111928;
+    --bs-accordion-border-color: #111928;
+}
+.sidenav .accordion-item {
+    background-color: #111928;
+    color: #fff;
+    margin-top: 16px;
+}
+
+.sidenav .accordion-button {
+    background-color: #111928;
+    border: 1px solid #111928;
+    border-radius: 10px !important;
+    transition: .3s ease;
+    padding: 12px;
+}
+.sidenav .accordion-button:hover{
+    background-color: rgba(37, 186, 233, 0.22);
+    color: #fff;
+}
+.sidenav .accordion-button span {
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 12px;
+}
+.sidenav .accordion-button::after {
+    background-image: url('./image/chevron-down.svg') !important;
+}
+.sidenav .accordion-button:focus {
+    box-shadow: none;
+    border-color: #111928;
+}
+.sidenav .accordion-button:not(.collapsed){
+    background-color: rgba(37, 186, 233, 0.22);
+    color: #fff;
+    box-shadow: none;
+}
+.sidenav .accordion-body .nav-link{
+    display: flex;
+    align-items: center;
+}
+.sidenav .accordion-body .nav-link span {
+    color: #fff;
+    width: 140px;
+    margin-left: 12px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 150%; 
+    letter-spacing: 0.2px;
+}
+.sidenav .accordion-body .nav-link{
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #111928;
+    border: 1px solid #111928;
+    transition: .3s ease;
+    margin-bottom: 8px;
+}
+.sidenav .accordion-body .nav-link:hover{
+    background-color: #25BAE9;
+    color: #fff;
+    border-color: #25BAE9;
+}
+.sidenav .bottom-links {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 10px;
+    background-color: #111928;
+    border: 1px solid #111928;
+    padding: 16px;
+    margin-top: 16px;
+}
+.sidenav .bottom-links:hover {
+    background-color: #25BAE9 !important;
+    color: #fff !important;
+    border-color: #25BAE9 !important;
+}
+.sidenav .bottom-links span {
+    margin-left: 12px;
+    width: 160px;
+}
+
+/* Profile section nav in mobile view  */
+.sidenav .profile-main {
+    margin-bottom: 16px;
+}
+
+
+.sidenav .profile-login {
+    display: flex;
+    align-items: center;
+}
+.sidenav .profile-login-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sidenav .profile-login-content span:first-child {
+    color: #fff;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: inline-block;
+}
+.sidenav .profile-login-content span:last-child{
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: inline-block;
+    margin-top: 4px;
+}
+
+.sidenav .profile-main{
+    width: 100%;
+}
+.sidenav .profile-main .accordion-button {
+    border-radius: 0 !important;
+    background-color: #111928;
+    border: 1px solid #111928;
+}
+.sidenav .profile-main .accordion-button:hover {
+    background-color: #1F2A37;
+    border: 1px solid #1F2A37;
+}
+.sidenav .profile-main .accordion-button:not(.collapsed){
+    background-color: #1F2A37;
+    border: 1px solid #1F2A37;
+}
+
+.sidenav .profile-main .accordion-body .btn {
+    display: flex;
+    align-items: center;
+}
+.sidenav .profile-main .accordion-body .btn span {
+    margin-left: 12px;
+}
+.sidenav .profile-main .accordion-body{
+    background-color: #1F2A37;
+}
+.sidenav .profile-main .accordion-body .btn {
+    background-color: #1F2A37;
+    border-color: #1F2A37;
+    width: 120px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-bottom: 28px;
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.sidenav .profile-main .accordion-body .btn:last-child {
+    margin-bottom: 12px;
+    font-weight: 500;
+
+}
+.profile-hr{
+    border: 1px solid #1E354C;
+    margin: 0;
+    max-width: 228px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/* MOBILE VIEW .sidenav  */
+
+.sidenav {
+    width: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #111928 ;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navstyle{
+        display:none;
+    }
+
+    .sidenav {
+        width: 0;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;  /* 100% */
+        background-color: #111928 ;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        z-index: 1;
+    }
+    
+    .sidenav a {
+        padding: 0px 8px 8px 16px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+    
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0px;
+        color: #25BAE9;
+        left: 140px;
+        font-size: 42px;
+        margin-left: 50px;
+    }
+    .sidenav .nav {
+        padding: 24px 9px;
+    }
+  }
+
+  @media only screen and (min-width: 769px) {
+    .hamburg {
+        display: none; 
+    }
+    .sidenav {
+        display: none;
+    }
+
+}
